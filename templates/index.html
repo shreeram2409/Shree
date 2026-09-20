@@ -1,0 +1,13 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Python Web Security Lab</title></head>
+<body>
+<h1>Python Web Security Lab</h1>
+<p>Practice defensive web-security concepts on this local application.</p>
+<ul>
+{% for lesson in lessons %}
+<li><strong>{{ lesson.title }}</strong> — {{ lesson.idea }}<br><em>Task:</em> {{ lesson.task }}</li>
+{% endfor %}
+</ul>
+<p><a href="{{ url_for('profile') }}">Input & output encoding lab</a> ·
+<a href="{{ url_for('login') }}">Authentication lab</a></p>
+</body></html>
