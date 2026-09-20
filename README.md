@@ -1,2 +1,10 @@
 # Shree
-Codespace for python project
+
+Python development project configured for GitHub Codespaces.
+
+## Run
+
+```bash
+python --version
+python main.py
+```
